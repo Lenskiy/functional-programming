@@ -14,18 +14,18 @@ Open console and run
 ```
 > stack exec – ghci
 ```
-type the following command and press enter
+Type the following command and press enter
 ```
 putStrLn "Hello, Haskell!"
 ```
-exit by typing `:q`
+Exit by typing `:q`
 
 #### Step 4: Test Glasgow Haskell Compiler (ghc)
 Create a file by typing
 ```
 > nano helloworld.hs
 ```
-and then type and save the following code
+Input and save the following code
 ```
 module Main where  
 main :: IO () 
