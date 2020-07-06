@@ -72,13 +72,14 @@ to
 [2] https://www.fpcomplete.com/blog/2018-haskell-survey-results/
 
 #### IDES
-[1] https://www.fpcomplete.com/blog/mainstream-ides-haskell/
+[1] https://github.com/haskell/haskell-ide-engine#installation
+[2] https://www.fpcomplete.com/blog/mainstream-ides-haskell/
 
-##### GUI
+#### GUI
 [1] HsQML then allows you to bind together front-end designs written in QML with back-end logic written in Haskell to create complete applications using the strengths of both. https://www.gekkou.co.uk/software/hsqml/
 [2]  https://wiki.haskell.org/Gtk2Hs
 
-##### Cool examples
+#### Cool examples
 [1] Gaussian smoothing implemented in Haskell and compared to Python. https://gist.github.com/maksbotan/03d34a4a463b6fe91093e7f85d90a9b4#file-1_text-md
 [2] Generating fractal set
 
