@@ -87,3 +87,4 @@ to
 [1] http://book.realworldhaskell.org
 [2] https://www.seas.upenn.edu/~cis194/spring13/lectures.html
 [3] https://www.fpcomplete.com/blog/
+[4] https://www.fpcomplete.com/haskell/tutorial/stack-script/
