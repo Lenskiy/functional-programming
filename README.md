@@ -46,9 +46,10 @@ https://code.visualstudio.com
 
 #### Step 6: Install VS Code extensions
 ```
-> git clone https://github.com/haskell/haskell-ide-engine
+> git clone https://github.com/haskell/haskell-ide-engine --recursive 
 > cd haskell-ide-engine
-> stack install
+> stack ./install.hs hie
+> stack ./install.hs hie
 ```
 
 #### Step 7: Make sure to add the installation path to the PATH environment variable. 
@@ -83,4 +84,5 @@ to
 
 #### Books or tutorials
 [1] http://book.realworldhaskell.org
-[2] https://www.fpcomplete.com/blog/
+[2] https://www.seas.upenn.edu/~cis194/spring13/lectures.html
+[3] https://www.fpcomplete.com/blog/
