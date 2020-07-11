@@ -62,8 +62,15 @@ to
 ~/.zshrc
 ```
 
-#### Step 8: Run VSCode and open  Code -> Preferences -> Extension. Type “Haskell Language Server” in the Search field. Click “install”. Restart VSCode.
+#### Step 8: Install Haskell extension in VSCode: 
+Run VSCode and open Code -> Preferences -> Extension. Type “Haskell Language Server” in the Search field. Click “install”. Restart VSCode.
 
+#### Step 9: Install Haskell debugger:
+Run VSCode and open Code -> Preferences -> Extension. Type "phoityne-vscode" in the Search field. Click “install”.
+Open a terminal and run
+```
+stack install haskell-dap ghci-dap haskell-debug-adapter
+```
 
 ### References
 
