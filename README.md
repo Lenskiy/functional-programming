@@ -71,6 +71,9 @@ Open a terminal and run
 ```
 stack install haskell-dap ghci-dap haskell-debug-adapter
 ```
+#### Step 10: Install
+Run VSCode and open Code -> Preferences -> Extension. Type "haskell-linter" in the Search field. Click “install”.
+
 
 ### References
 
