@@ -1,6 +1,6 @@
 ### Mac OSX installation:
 
-#### Step 1: Install stack 
+#### Step 1: Install Stack. Stack is a cross-platform program for developing Haskell projects 
 ##### Mac OSX:
 (a) Install homebrew. See https://brew.sh for details
 ```
