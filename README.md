@@ -27,7 +27,7 @@ export PATH="/home/artem/.local/bin:$PATH"
 #### Step 3: Test GHC’s interactive environment
 Open console and run 
 ```
-> stack exec – ghci
+> stack ghci
 ```
 Type the following command and press enter
 ```
