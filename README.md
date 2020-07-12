@@ -60,12 +60,30 @@ Now test the program by running
 https://code.visualstudio.com
 
 #### Step 6: Install VS Code extensions
+##### MacOSX
 ```
 > git clone https://github.com/haskell/haskell-ide-engine --recursive 
 > cd haskell-ide-engine
 > stack ./install.hs hie
 > stack ./install.hs hie
 ```
+
+##### Linux: Debian 9/Ubuntu 18.04 or earlier
+```
+> sudo apt install libicu-dev libtinfo-dev libgmp-dev
+> git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules
+> cd haskell-ide-engine
+> stack ./install.hs hie
+```
+
+##### Linux: Debian 10/Ubuntu 18.10 or later
+```
+> sudo apt install libicu-dev libncurses-dev libgmp-dev # also zlib1g-dev if not installed
+> git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules
+> cd haskell-ide-engine
+> stack ./install.hs hie
+```
+
 
 #### Step 7: Make sure to add the installation path to the PATH environment variable. 
 If you use Z shell as a command interpreter for shell scripting, then add 
