@@ -1,12 +1,27 @@
 ### Mac OSX installation:
 
-#### Step 1: Install homebrew. See https://brew.sh for details
+#### Step 1: Install stack 
+##### Mac OSX:
+(a) Install homebrew. See https://brew.sh for details
 ```
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
-#### Step 2: Install the Haskell tool stack
+(b) Install the Haskell tool stack
 ```
 > brew install stack
+```
+
+##### Linux
+
+(a) Download stack
+```
+curl -sSL https://get.haskellstack.org/ | sh
+```
+
+(b) Add path
+```
+export PATH="/home/artem/.local/bin:$PATH"
+
 ```
 
 #### Step 3: Test GHC’s interactive environment
