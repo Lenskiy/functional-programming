@@ -23,6 +23,16 @@ curl -sSL https://get.haskellstack.org/ | sh
 export PATH="/home/artem/.local/bin:$PATH"
 
 ```
+#### Step 2: Make sure to add the installation path to the PATH environment variable. 
+If you use Z shell as a command interpreter for shell scripting, then add 
+```
+PATH=${HOME}/.local/bin:$PATH
+```
+to 
+```
+~/.zshrc
+```
+
 
 #### Step 3: Test GHC’s interactive environment
 Open console and run 
@@ -82,17 +92,6 @@ https://code.visualstudio.com
 > git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules
 > cd haskell-ide-engine
 > stack ./install.hs hie
-```
-
-
-#### Step 7: Make sure to add the installation path to the PATH environment variable. 
-If you use Z shell as a command interpreter for shell scripting, then add 
-```
-PATH=${HOME}/.local/bin:$PATH
-```
-to 
-```
-~/.zshrc
 ```
 
 #### Step 8: Install Haskell extension in VSCode: 
