@@ -94,17 +94,34 @@ https://code.visualstudio.com
 > stack ./install.hs hie
 ```
 
-#### Step 8: Install Haskell extension in VSCode: 
+#### Step 7: Install Haskell extension in VSCode: 
 Run VSCode and open Code -> Preferences -> Extension. Type “Haskell Language Server” in the Search field. Click “install”. Restart VSCode.
 
-#### Step 9: Install Haskell debugger:
+#### Step 8: Install Haskell debugger:
 Run VSCode and open Code -> Preferences -> Extension. Type "phoityne-vscode" in the Search field. Click “install”.
 Open a terminal and run
 ```
 stack install haskell-dap ghci-dap haskell-debug-adapter
 ```
-#### Step 10: Install
-Run VSCode and open Code -> Preferences -> Extension. Type "haskell-linter" in the Search field. Click “install”.
+#### Step 9: Create new project and test debugger
+(a) Open a terminal within VSCode: Terminal -> New Terminal
+(b) Check that gchi-gap and haskell-debug-adapter are visible to VSCode by running 
+```
+ghci-dap --help
+```
+```
+haskell-debug-adapter --version
+```
+(c) Create a project named sample
+```
+stack new sample --bare
+```
+(d) Use VSCode menu to open the folder where the project was created 
+(e) Press F7 to build the project, and then press F8 to run the tests. 
+(f) Click on the icon on the left-hand side, that depicts a play (triangle) and a small bug on it. Then click "create a launch.json file". In the appeared menu choose "haskell-debug-adapter". This will setup a build configuration.
+(g) Open Main.hs and press F10, this should run the code.
+(h) To set a breakpoint, in the source file e.g. Main.hs click on the left of line number, a red dot should appear. Press F10 to run the code. Now the executation will stop at the breakpoint. 
+
 
 
 ### References
