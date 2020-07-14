@@ -103,7 +103,7 @@ Open a terminal and run
 ```
 stack install haskell-dap ghci-dap haskell-debug-adapter
 ```
-#### Step 9: Create new project and test debugger
+#### Step 9: Create a new project and test debugger (https://github.com/phoityne/hdx4vsc)
 (a) Open a terminal within VSCode: Terminal -> New Terminal
 (b) Check that gchi-gap and haskell-debug-adapter are visible to VSCode by running 
 ```
