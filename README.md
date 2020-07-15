@@ -1,6 +1,7 @@
 ### Mac OSX installation:
 
 #### Step 1: Install Stack. Stack is a cross-platform program for developing Haskell projects 
+
 ##### Mac OSX
 (a) Install homebrew. See https://brew.sh for details
 ```
@@ -18,23 +19,17 @@
 curl -sSL https://get.haskellstack.org/ | sh
 ```
 
-(b) Add path
+(b) Update your PATH enviroment variable by concatenating the exisiting PATH as follows
 ```
-export PATH="/home/artem/.local/bin:$PATH"
-
+export PATH="${HOME}/.local/bin:$PATH"
 ```
-#### Step 2: Make sure to add the installation path to the PATH environment variable. 
-If you use Z shell as a command interpreter for shell scripting, then add 
-```
-PATH=${HOME}/.local/bin:$PATH
-```
-to 
+If you use Z shell as a command interpreter for shell scripting, then the above line should be added to  
 ```
 ~/.zshrc
 ```
 
 
-#### Step 3: Test GHC’s interactive environment
+#### Step 2: Test GHC’s (The Glasgow Haskell Compiler) interactive environment
 Open console and run 
 ```
 > stack ghci
@@ -45,11 +40,12 @@ putStrLn "Hello, Haskell!"
 ```
 Exit by typing `:q`
 
-#### Step 4: Test Glasgow Haskell Compiler (ghc)
+#### Step 3: Test Glasgow Haskell Compiler (ghc)
 Create a file by typing
 ```
 > nano helloworld.hs
 ```
+where nano is text editor, any other editor of you choice will work too
 Input and save the following code
 ```
 module Main where  
@@ -61,15 +57,17 @@ Build the program by
 ```
 > stack exec -- ghc helloworld -o helloworld
 ```
-Now test the program by running
+
+Now test the program by running it
 ```
 > ./helloworld
 ```
 
-#### step 5: Download VSCode
+#### step 4: Download VSCode (Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.)
 https://code.visualstudio.com
+You could also use an OS  software manager to download and install VSCode
 
-#### Step 6: Install VS Code extensions
+#### Step 5: Install VS Code extensions
 ##### MacOSX
 ```
 > git clone https://github.com/haskell/haskell-ide-engine --recursive 
@@ -94,33 +92,36 @@ https://code.visualstudio.com
 > stack ./install.hs hie
 ```
 
-#### Step 7: Install Haskell extension in VSCode: 
-Run VSCode and open Code -> Preferences -> Extension. Type “Haskell Language Server” in the Search field. Click “install”. Restart VSCode.
+#### Step 6: Install Haskell extension in VSCode: 
+Run VSCode, open Code -> Preferences -> Extension. Type “Haskell Language Server” in the Search field. Click “install”. Restart VSCode.
 
-#### Step 8: Install Haskell debugger:
+#### Step 7: Install Haskell debugger:
 Run VSCode and open Code -> Preferences -> Extension. Type "phoityne-vscode" in the Search field. Click “install”.
 Open a terminal and run
 ```
 stack install haskell-dap ghci-dap haskell-debug-adapter
 ```
-#### Step 9: Create a new project and test debugger (https://github.com/phoityne/hdx4vsc)
-(a) Open a terminal within VSCode: Terminal -> New Terminal
-(b) Check that gchi-gap and haskell-debug-adapter are visible to VSCode by running 
+#### Step 8: Create a new project and test the debugger (https://github.com/phoityne/hdx4vsc)
+1. Open a terminal within VSCode: Terminal -> New Terminal
+2. Check that gchi-gap and haskell-debug-adapter are visible to VSCode by running 
 ```
 ghci-dap --help
 ```
 ```
 haskell-debug-adapter --version
 ```
-(c) Create a project named sample
+3. Create a project named sample by typing within the openned above terminal 
 ```
 stack new sample --bare
 ```
-(d) Use VSCode menu to open the folder where the project was created 
-(e) Press F7 to build the project, and then press F8 to run the tests. 
-(f) Click on the icon on the left-hand side, that depicts a play (triangle) and a small bug on it. Then click "create a launch.json file". In the appeared menu choose "haskell-debug-adapter". This will setup a build configuration.
-(g) Open Main.hs and press F10, this should run the code.
-(h) To set a breakpoint, in the source file e.g. Main.hs click on the left of line number, a red dot should appear. Press F10 to run the code. Now the executation will stop at the breakpoint. 
+4. Use VSCode menu to open the folder with the project.
+5. Press F7 to build the project, and then press F8 to run the tests. 
+6. Click on the icon on the left-hand side, that depicts a play button (a triangle) and a small bug on it. Then click "create a launch.json file". In the popped up  menu, choose "haskell-debug-adapter". This will setup a build configuration.
+7. Open Main.hs and press F10, this should run the code.
+8. To set a breakpoint, click to the left of a line number (in the source file e.g. Main.hs) on a dark red dot, a red dot should appear. Press F10 to run the code. Now the executation will stop at the breakpoint. 
+
+![Debugger installation](https://raw.githubusercontent.com/phoityne/hdx4vsc/master/docs/08_quickstart.gif)
+
 
 
 
