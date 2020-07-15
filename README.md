@@ -1,20 +1,21 @@
 ### Mac OSX and Linux installation steps:
 
-#### Step 1: Install Stack. Stack is a cross-platform program for developing Haskell projects 
+#### Step 1: Install Stack. 
+Stack is a cross-platform program for developing Haskell projects and managing their dependencies.
 
 * ##### Mac OSX
 (a) Install homebrew. See https://brew.sh for details
 ```
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
-(b) Install the Haskell tool stack
+(b) Install the Haskell tool Stack
 ```
 > brew install stack
 ```
 
 * ##### Linux
 
-(a) Download stack
+(a) Download Stack
 ```
 curl -sSL https://get.haskellstack.org/ | sh
 ```
@@ -69,7 +70,8 @@ https://code.visualstudio.com
 You could also use an OS  software manager to download and install VSCode
 
 #### Step 5: Install VS Code extensions
-##### MacOSX
+
+* ##### MacOSX
 ```
 > git clone https://github.com/haskell/haskell-ide-engine --recursive 
 > cd haskell-ide-engine
@@ -77,7 +79,7 @@ You could also use an OS  software manager to download and install VSCode
 > stack ./install.hs hie
 ```
 
-##### Linux: Debian 9/Ubuntu 18.04 or earlier
+* ##### Linux: Debian 9/Ubuntu 18.04 or earlier
 ```
 > sudo apt install libicu-dev libtinfo-dev libgmp-dev
 > git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules
@@ -85,7 +87,7 @@ You could also use an OS  software manager to download and install VSCode
 > stack ./install.hs hie
 ```
 
-##### Linux: Debian 10/Ubuntu 18.10 or later
+* ##### Linux: Debian 10/Ubuntu 18.10 or later
 ```
 > sudo apt install libicu-dev libncurses-dev libgmp-dev # also zlib1g-dev if not installed
 > git clone https://github.com/haskell/haskell-ide-engine --recurse-submodules
