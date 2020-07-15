@@ -2,7 +2,7 @@
 
 #### Step 1: Install Stack. Stack is a cross-platform program for developing Haskell projects 
 
-##### Mac OSX
+* ##### Mac OSX
 (a) Install homebrew. See https://brew.sh for details
 ```
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -12,7 +12,7 @@
 > brew install stack
 ```
 
-##### Linux
+* ##### Linux
 
 (a) Download stack
 ```
