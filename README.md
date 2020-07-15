@@ -1,4 +1,4 @@
-### Mac OSX installation:
+### Mac OSX and Linux installation steps:
 
 #### Step 1: Install Stack. Stack is a cross-platform program for developing Haskell projects 
 
