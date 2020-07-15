@@ -63,7 +63,8 @@ Now test the program by running it
 > ./helloworld
 ```
 
-#### step 4: Download VSCode (Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.)
+#### Step 4: Download VSCode
+Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
 https://code.visualstudio.com
 You could also use an OS  software manager to download and install VSCode
 
