@@ -45,8 +45,8 @@ Create a file by typing
 ```
 > nano helloworld.hs
 ```
-where nano is text editor, any other editor of you choice will work too
-Input and save the following code
+where nano is a text editor, any other editor of you choice will work too.
+Type and save the following code
 ```
 module Main where  
 main :: IO () 
